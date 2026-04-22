@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Daniel | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Semantic landmarks help browsers and assistive technologies understand the contact page. -->
+    <header class="site-header">
+        <p class="site-tag">Professional Semantic Portfolio</p>
+        <h1>Contact Me</h1>
+        <nav class="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="panel">
+            <h2>Contact Information</h2>
+            <p>Email: daniel@email.com</p>
+            <p>Location: Uganda</p>
+            <p>
+                If you would like to collaborate, ask questions, or learn more about my work, please use the
+                contact form below.
+            </p>
+        </section>
+
+        <!-- Labels are matched with inputs to improve form accessibility and HTML5 validation. -->
+        <section class="panel">
+            <h2>Message Form</h2>
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message here" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Busingye Daniel Mbeine</p>
+        <p>Contact page demonstrating HTML5 form fields, labels, and input types.</p>
+    </footer>
+</body>
+</html>

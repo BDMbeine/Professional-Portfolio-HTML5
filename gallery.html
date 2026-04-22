@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Daniel Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Each page repeats the semantic shell so users can move through the portfolio easily. -->
+    <header class="site-header">
+        <p class="site-tag">Professional Semantic Portfolio</p>
+        <h1>Project Gallery</h1>
+        <nav class="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="panel">
+            <h2>Portfolio Media Showcase</h2>
+            <p>
+                This gallery presents screenshots from the portfolio development process. Each image uses figure
+                and figcaption to provide descriptive context and improve multimedia accessibility.
+            </p>
+        </section>
+
+        <!-- Figure elements connect each image with a clear caption for accessibility and meaning. -->
+        <section class="media-grid" aria-label="Image gallery">
+            <figure class="panel">
+                <img src="images/homepage-preview.png" alt="Screenshot preview of the homepage layout and hero section">
+                <figcaption>Homepage preview showing the portfolio landing section and key visual styling.</figcaption>
+            </figure>
+
+            <figure class="panel">
+                <img src="images/gallery-preview.png" alt="Screenshot preview of the project gallery page with portfolio cards">
+                <figcaption>Gallery design draft displaying project cards and the visual arrangement of content.</figcaption>
+            </figure>
+
+            <figure class="panel">
+                <img src="images/contact-preview.png" alt="Screenshot preview of the contact page and communication section">
+                <figcaption>Contact page draft used to plan user communication and layout spacing.</figcaption>
+            </figure>
+        </section>
+
+        <section class="panel">
+            <h2>Video Walkthrough</h2>
+            <figure class="media-video">
+                <video controls preload="metadata">
+                    <source src="videos/demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>
+                    A short project walkthrough showing the portfolio pages and how the website is organized.
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Busingye Daniel Mbeine</p>
+        <p>Gallery page featuring screenshots and video documentation of the project.</p>
+    </footer>
+</body>
+</html>
